@@ -1,6 +1,9 @@
 import tensorflow as tf
 
 
+def test(x):
+    return "Received input: " + x
+
 # Softmax Regression Model
 def regression(x):
     W = tf.Variable(tf.zeros([784, 10]), name="W")
